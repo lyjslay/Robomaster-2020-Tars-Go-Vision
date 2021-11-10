@@ -91,24 +91,20 @@ Robomaster-Detector/
 
 * 通过相机的标定方法获得相机的内参矩阵
 * 以装甲板的中心建立世界坐标系，采用PNP算法求解出相机的外参矩阵
-$$R=
-\left[
- \begin{matrix}
-   a & b & c \\
-   f & g & h \\
-   k & l & m \\
-  \end{matrix} 
-\right]
-$$
+$$R=\left[\begin{matrix}a & b & c \\f & g & h \\k & l & m \\\end{matrix} \right]$$
+
 并根据 
+
 $$pitch = atan2(f,k)$$
+
 $$yaw = atan2(a,k) $$
+
 求解出旋转角，进而控制云台转动.
 
 
 
 ## 软件测试步骤
-从百度网盘下载模型文件和测试视频(提取码：oza7)：https://pan.baidu.com/s/1fQlVAZpAcXy9H3WGko5rCA 
+从百度网盘下载模型文件和测试视频(提取码：oza7)：None
 
 
 
